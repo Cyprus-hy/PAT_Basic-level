@@ -42,7 +42,7 @@ int main()
 		cout << "N ";
 	else
 		cout << b1 << " ";
-	if (count[1] == 0)
+	if (count[1] == 0)//分类
 		cout << "N ";
 	else
 		cout << b2 << " ";

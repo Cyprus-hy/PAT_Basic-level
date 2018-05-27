@@ -5,14 +5,14 @@ using namespace std;
 
 int main()
 {
-	int i_num, tem[1000] = { 0 }, count[5] = { 0 };//¼ÆÊıÆ÷
+	int i_num, tem[1000] = { 0 }, count[5] = { 0 };//è®¡æ•°å™¨
 	double b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0,sum4=0,mean4,max;
 	cin >> i_num;
 	for (int i = 0; i < i_num; i++)
 	{
 		cin >> tem[i];
 		if (tem[i] % 5 == 4)
-			max = tem[i];//ÏÈµÃµ½¶Ô5È¡Ä£Îª4µÄÊı
+			max = tem[i];//å…ˆå¾—åˆ°å¯¹5å–æ¨¡ä¸º4çš„æ•°
 	}
 	for (int j = 0; j < i_num; j++)
 	{
@@ -20,14 +20,14 @@ int main()
 			b1 += tem[j];
 		else if (tem[j] % 5 == 1)
 		{
-			b2 += pow(-1, count[1])*tem[j];//»ìºÏÔËËã
+			b2 += pow(-1, count[1])*tem[j];//æ··åˆè¿ç®—
 			count[1]++;
 		}
 		else if (tem[j] % 5 == 2)
 			count[2]++;
 		else if (tem[j] % 5 == 3)
 		{
-			sum4 += tem[j];//ºÍ
+			sum4 += tem[j];//å’Œ
 			count[3]++;
 		}
 		else if (tem[j] % 5 == 4)
@@ -37,8 +37,8 @@ int main()
 			count[4]++;
 		}
 	}
-	mean4 = sum4 / count[3];//Æ½¾ùÖµ
-	if (b1 == 0)//Ò»Ö±ÅĞ¶Ï
+	mean4 = sum4 / count[3];//å¹³å‡å€¼
+	if (b1 == 0)//ä¸€ç›´åˆ¤æ–­
 		cout << "N ";
 	else
 		cout << b1 << " ";
